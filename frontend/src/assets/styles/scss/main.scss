@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'colors';
+@import 'responsive';
+@import 'typos';
+@import 'buttons';
+@import 'commons';
+@import 'header';
+@import 'footer';
+@import 'forms';
+@import 'loader';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  color: $text-primary;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  flex: 1;
+  padding: 0;
+}
+
+section, .section {
+  padding: 10rem 1.5rem;
+}
+
+.container {
+  max-width: 140rem!important;
+}
