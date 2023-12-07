@@ -1,11 +1,12 @@
 import {Outlet} from "react-router-dom";
-import "react-toastify/dist/ReactToastify.css";
 import ScrollToTop from "./utils/ScrollToTop";
+import { Toaster } from "sonner";
 
 const App = () => {
     return (
         <>
             <ScrollToTop>
+                <Toaster />
                 <main>
                     <Outlet />
                 </main>

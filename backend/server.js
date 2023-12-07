@@ -1,11 +1,14 @@
 import express from "express";
 import path from "path";
 import dotenv from "dotenv";
+import connectDB from "./config/db.js";
 import cookieParser from "cookie-parser";
 dotenv.config();
 import cors from "cors";
 import { notFound, errorHandler } from './middlewares/errorMiddleware.js';
 const port = process.env.PORT;
+
+connectDB(); //Connect to database
 
 const app = express();
 

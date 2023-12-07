@@ -11,7 +11,7 @@ import {HelmetProvider} from "react-helmet-async";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
-        <Route index={true} path="/" element={<App />} >
+        <Route path="/" element={<App />} >
             <Route index={true} path={"/"} element={<HomeScreen />}  />
         </Route>
     )
